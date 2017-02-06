@@ -10,17 +10,19 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
 
-  firsName: { type: String, required: true },
-  lastName: { type: String, required: true },
-  email: {type: String, required: true, unique: true},
-  picture: { type: String, default: 'picture.jpeg'},
-  options:{
-  	geoLocation: {
-    	latitude:{ type: Number,default:0},
-    	longitude:{ type: Number,default:0}
-    },
-    racis:{type: String, default: 'R', enum:['R', 'A', 'C', 'I', 'S']}
-  },
+  firstName: { type:String, required: true },
+  lastName: { type:String, required: true },
+  email: { type:String, required: true, unique: true},
+	username: { type:String,required:true,unique:true},
+	password: { type:String, default: ''},
+  description: { type:String },
+  roleName: { type:String },
+  picture: { type:String, default: 'picture.jpeg'},
+  racis:{type: String, default: 'R', enum:['R', 'A', 'C', 'I', 'S']},
+	geoLocation: {
+		latitude:{ type:Number,default:0},
+		longitude:{ type:Number,default:0}
+	},
   createdAt: { type: Date, 'default': Date.now },
   updatedAt: { type: Date, 'default': Date.now }
 });
