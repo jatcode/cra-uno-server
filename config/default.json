@@ -1,0 +1,12 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "mongodb": "mongodb://localhost:27017/poc-react102",
+  "public": "../public/",
+  "auth": {
+    "token": {
+      "secret": "jiTEmU5zAhWsm7KgToda3/Rq/JEpvOrWIYbyaulkeAr85hV+o0UxOukeHmufIHD21+5QO8rHyxSEceBptguJtg=="
+    },
+    "local": {}
+  }
+}
