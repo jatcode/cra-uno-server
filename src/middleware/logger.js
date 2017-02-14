@@ -16,6 +16,7 @@ module.exports = function(app) {
       else {
         winston.error(message);
         winston.info(error.stack);
+        console.log('ERROR EN LOGGER',error);
       }
     }
 

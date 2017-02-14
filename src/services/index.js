@@ -1,7 +1,10 @@
 'use strict';
+const mongoose = require('mongoose');
+
 const authentication = require('./authentication');
 const user = require('./user');
-const mongoose = require('mongoose');
+const enums = require('./enumuser');
+
 module.exports = function() {
   const app = this;
   
@@ -10,4 +13,5 @@ module.exports = function() {
   
 	app.configure(authentication);
   app.configure(user);
+  app.configure(enums);
 };
