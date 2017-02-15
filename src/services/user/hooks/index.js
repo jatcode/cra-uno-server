@@ -26,17 +26,17 @@ exports.before = {
     
   ],
   patch: [
-    auth.verifyToken(),
+    /*auth.verifyToken(),
     auth.populateUser(),
     auth.restrictToAuthenticated(),
-    auth.restrictToOwner({ ownerField: '_id' }),
+    auth.restrictToOwner({ ownerField: '_id' }),*/
     
   ],
   remove: [
-    auth.verifyToken(),
+    /*auth.verifyToken(),
     auth.populateUser(),
     auth.restrictToAuthenticated(),
-    auth.restrictToOwner({ ownerField: '_id' })
+    auth.restrictToOwner({ ownerField: '_id' })*/
   ]
 };
 
