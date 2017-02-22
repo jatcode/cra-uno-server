@@ -12,17 +12,17 @@ exports.before = {
 		auth.restrictToAuthenticated()*/
   ],
   get: [
-    auth.verifyToken(),
-    auth.populateUser(),
-    auth.restrictToAuthenticated(),
-    auth.restrictToOwner({ ownerField: '_id' })
+    // auth.verifyToken(),
+    // auth.populateUser(),
+    // auth.restrictToAuthenticated(),
+    // auth.restrictToOwner({ ownerField: '_id' })
   ],
 	create: [/*auth.hashPassword(),*/],
   update: [
-    auth.verifyToken(),
-    auth.populateUser(),
-    auth.restrictToAuthenticated(),
-    auth.restrictToOwner({ ownerField: '_id' }),
+    // auth.verifyToken(),
+    // auth.populateUser(),
+    // auth.restrictToAuthenticated(),
+    // auth.restrictToOwner({ ownerField: '_id' }),
     
   ],
   patch: [
