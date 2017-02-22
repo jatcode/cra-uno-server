@@ -1,15 +1,15 @@
 'use strict';
 
-const path = require('path');
+const feathers = require('feathers');
 const serveStatic = require('feathers').static;
+const rest = require('feathers-rest');
+const hooks = require('feathers-hooks');
+const bodyParser = require('body-parser');
+const path = require('path');
 const favicon = require('serve-favicon');
 const compress = require('compression');
 const cors = require('cors');
-const feathers = require('feathers');
 const configuration = require('feathers-configuration');
-const hooks = require('feathers-hooks');
-const rest = require('feathers-rest');
-const bodyParser = require('body-parser');
 
 const middleware = require('./middleware');
 const services = require('./services');
